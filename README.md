@@ -3,11 +3,14 @@
 This page is test how to get\set\remove the cookie that you want.
 
 ##Usage
->1. If you browser don't have the cookie named 'test', the program will create it, and the new cookie's the default value is null
+###1. Init 
 ```javascript
 var a = Ykdc.findCookie('test');
 ```
+If you browser don't have the cookie named 'test', the program will create it, and the new cookie's the default value is null
+
 -------  
+###2. SetCookie 
 ```javascript
 a.setCookie(key,value);
 ```
@@ -28,6 +31,7 @@ a.setCookie(null);
 ```
 ------- 
 
+###3. RemoveCookie 
 ```javascript
 a.removeCookie();
 ```
