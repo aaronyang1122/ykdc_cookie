@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>test cookie</title>
+		<style type="text/css">
+			body{
+				font-family: helvetica;
+				font-size: 14px;
+				padding: 20px;
+			}
+			ol{
+				margin-left: 0;
+				padding: 0 12px;
+			}
+			.content pre{
+				font-family: helvetica;
+				font-size: 12px;
+				background-color: #EEE;
+				padding: 10px;
+			}
+			.content p{
+				color: lightseagreen;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Introduce</h1>
+		<p>This page is test how to get\set\remove the cookie that you want.</p>
+		<h1>Usage</h1>
+		<div class="content">
+			<ol>
+				<li>
+					<pre>var a = Ykdc.findCookie('test');</pre>
+					<p>If you browser don't have the cookie named 'test', the program will create it, and the new cookie's the default value is null</p>
+				</li>
+				<li>
+					<pre>a.setCookie(key,value);</pre>
+					<p>You can set a single key and value like that</p>
+					<pre>a.setCookie(obj)</pre>
+					<p>You can also set a object key and value like that</p>
+					<pre>a.setCookie(string)</pre>
+					<p>You can also set single value like that, ps: if cookie value's type has changed, it will store the history value into the 'this[3]'</p>
+					<pre>a.setCookie(null)</pre>
+					<p>You can remove all value to use param: null</p>
+				</li>
+				<li>
+					<pre>a.removeCookie();</pre>
+					<p>Remove all value like use setCookie(null)</p>
+					<pre>a.removeCookie(key);</pre>
+					<p>Remove the key which you named, if the key is not find, the program will not do anything, if the original cookie value's type is Object and this value is last one of this Object, the cookie value will be reset: null</p>
+				</li>
+			</ol>
+		</div>
+
+		
+		<h1>Suggestion</h1>
+		<p>You can also give me some suggestion to this e-mail: <a href="mailto:aaronyang1122@gmail.com">aaronyang1122@gmail.com</a></p>
+		<script src="js/ykdc_cookie.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
